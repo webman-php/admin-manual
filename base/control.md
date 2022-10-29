@@ -154,6 +154,7 @@ url返回格式参考 `plugin/admin/app/controller/Crud.php` `formatSelect` 方�
 |----|----|-------|----|
 |accept|接受上传的文件类型, 详见 input accept Attribute|string|无|
 |upload|上传的地址|string|无|
+|maxSize|单个文件最大体积，单位 M|number|2|
 |directory|支持上传文件夹（caniuse）|boolean|false|
 |disabled|是否禁用|boolean|false|
 |listType|上传列表的内建样式，支持三种基本样式 text, picture 和 picture-card|string|text|

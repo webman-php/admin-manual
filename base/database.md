@@ -3,66 +3,59 @@
 
 # 创建表格
 #### 点击创建表格
-![](../img/create-table.png)
+![img.png](img.png)
 
 #### 设置字段等信息
-![](../img/create-table2.png)
+![img_1.png](img_1.png)
 
 #### 设置表单信息
-![](../img/create-table3.png)
+![img_2.png](img_2.png)
 
 #### 设置索引
-![](../img/create-table4.png)
+![img_3.png](img_3.png)
 
 # 浏览表格
-![](../img/table-view.png)
+![img_4.png](img_4.png)
 
-![](../img/table-view2.png)
+![img_5.png](img_5.png)
 
-# 更改表格
-![](../img/column2.png)
+# 编辑表格
+![img_6.png](img_6.png)
 
 点击后显示的界面和创建表格页面相同
 
 # 显示列
 #### 临时设置显示哪些列
-![](../img/column.png)
+![img_7.png](img_7.png)
 
 #### 永久性设置显示哪些列
-![](../img/column3.png)
-
-如上图确认后列表将只显示title和content两列内容。
-
-![img.png](../img/column4.png)
+![img_8.png](img_8.png)
+在数据库管理->编辑表格->表单属性里可以设置显示哪些列
 
 # 添加记录
-![](../img/insert.png)
-![](../img/insert2.png)
+![img_9.png](img_9.png)
+
+![img_10.png](img_10.png)
 
 #### 设置表单字段
 
 有时候有些字段有默认值不需要我们在表单中填写，例如创建时间和更新时间是系统自动填写的，这时候我们需要再次到表编辑页面的"表单属性"一栏中设置
 
-![](../img/insert3.png)
+![img_11.png](img_11.png)
 
-在表单显示一栏将创建时间和更新时间勾选掉，点击确定，此时再添加数据时表单显示如下
-
-![](../img/insert4.png)
 
 同时我们可以为表单的某个字段设置控件及控件参数，支持的控件及参数参考[控件](control.md)
 
 # 列表排序
-有时候我们希望列表能够按照某个字段排序，例如文章支持按照创建时间排序，我们只需要在表格的表单属性里设置支持排序字段即可，例如
+有时候我们希望列表能够按照某个字段排序，例如按照id排序，我们只需要在表格的表单属性里设置支持排序字段即可，例如
 
-![](../img/sort.png)
+![img_12.png](img_12.png)
 
-如上图保存后文章列表将支持按照创建时间排序
-
-![](../img/sort2.png)
+![img_13.png](img_13.png)
 
 # 列表搜索
-![](../img/search.png)
+![img_14.png](img_14.png)
 
 同样在表编辑页面的"表单属性"中可以设置某些字段是否支持查询，如上图所示，点击确定后列表页将显示创建时间、标题、用户id的搜框，如下图所示
 
-![](../img/search2.png)
+![img_15.png](img_15.png)

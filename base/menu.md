@@ -1,31 +1,34 @@
 # 菜单管理
-![](../img/menu.png)
+![img_16.png](img_16.png)
 
 # 字段含义
 
 #### 标题
 也就是显示在菜单栏的名字
 
-#### name(全局唯一)
-name字段，**必须全局唯一。**
-如果菜不是目录(也就是叶子节点)，name通常是控制器的类名，例如`plugin\admin\app\controller\user\UserController`。如果是目录，则填写合适的目录名，目录名不要以`app-`开头。
+#### 标识
+标识，**必须全局唯一。**
+当类型是目录时，可填写目录对应的英文名，例如数据库目录标识为`database`。
+当类型是菜单时，一般填写菜单对应控制器的类名，例如`plugin\admin\app\controller\TableController`
+当类型是权限时，填写`控制器@方法`，例如`plugin\admin\app\controller\TableController@create`
+
+> **提示**
+> 权限类型一般不需要手动填写，在给角色设置权限时会自动扫描并填充
 
 #### 上级菜单
-下拉列表，选择上级菜单，如果没有上级菜单，留空或0即可。
-
-#### 前端组件
-如果菜单是目录或iframe，则填写`LAYOUT`。
-如果菜单是具体的页面，则填写前端 [admin-vue-src](https://github.com/webman-php/admin-vue-src) 内部页面地址(忽略`src/views`前缀和文件后缀，例如页面`src/views/user/user/index.vue`的值为`/user/user/index`)，发布时需要重新编译，具体参考[添加页面](../development/page.md)
-
-#### 路径
-地址栏里显示的路径。
-例如菜单"通用设置"路径的值为`/common`，该菜单下的"个人资料"菜单的路径为`account`，当用户访问"通用设置"下的"个人资料"时，地址栏里显示的路径为`/common/account`
-
-#### 图标
-显示在菜单前的图标
+选择上级菜单
 
 #### url
-当菜单是一个iframe页面时，填写iframe的url地址，否则留空
+页面url地址，例如 `/app/admin/table/index`
 
-#### 隐藏菜单
-是否将菜单隐藏
+> **提示**
+> 只有菜单类型需要填写，目录及权限类型不需要填写
+> 
+#### 图标
+显示在菜单前的图标
+ 
+#### 类型
+分为目录、菜单、权限，其中权限是指是否有某个控制器的某个方法的执行权限
+
+#### 排序
+数字越大，位置也靠前

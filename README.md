@@ -1,8 +1,12 @@
 # webman/admin
-`webman/admin` 是基于webman开发的一个管理后台，它实际上是一个webman应用插件，任何webman项目(*要求webman>=1.4*)都可以安装使用它。`webman/admin`将成为webman非常重要的生态。
+`webman/admin` 是基于webman开发的一个开源免费管理后台，任何webman项目(*要求webman>=1.4*)都可以安装使用它。`webman/admin`将成为webman非常重要的生态。
+
+**源码地址** https://github.com/webman-php/admin (欢迎点星星收藏)
 
 # 前端技术栈
-前端使用[ven-vben-admin](https://github.com/vbenjs/vue-vben-admin) ，也就是[ant.design](https://ant.design/index-cn) + [vue3](https://cn.vuejs.org/)。
+前端使用[pear-admin-layui](http://www.pearadmin.com)，开发者需要熟悉[Layui](https://layui.gitee.io)组件库
+
+[Layui官方手册](https://layui.gitee.io/v2/docs/) [Layui官方示例](https://layui.gitee.io/v2/demo/)
 
 # webman/admin 目标
 ### 为应用插件提供统一的后台
@@ -18,4 +22,4 @@
 `webman/admin` 提供通用的功能，如数据库管理、一键菜单、权限管理、用户管理等，使用`webman/admin`开发者无需重复开发这些模块，便可以快速拥有一个简单的管理后台
 
 # 预览
-![](img/preview.png)
+![img.png](img.png)

@@ -1,37 +1,45 @@
 # 目录结构
 
 ```
-admin/
+plugin/admin
 ├── app
-│   ├── controller   
-│   │   ├── auth                // 菜单、角色等权限相关控制器
-│   │   ├── common              // 登录、安装、账户设置等控制器
-│   │   ├── database            // 数据库管理相关控制器
-│   │   ├── plugin              // 插件相关控制器
-│   │   ├── user                // 用户相关控制器
-│   │   ├── Base.php            // 控制器基类
-│   │   ├── Crud.php            // 控制器增删改查公共
-│   │   └── IndexController.php // admin主页
-│   ├── exception     // 异常类
-│   ├── middleware    // 中间件
-│   ├── model         // Model
-│   ├── view          // 视图
-│   ├── functions.php // 一些公共函数
-│   └── Util.php      // 一些公用工具方法
-├── public                    // 静态文件目录     
-│   ├── _app.config.js  // 前端公共配置
-│   ├── assets          // 图片等资源
-│   ├── resource        // js css 等资源
-│   ├── upload          // 上传目录
-│   ├── avatar.png      // 默认头像
-│   ├── favicon.ico     // ico图标
-│   └── index.html      // index.html
-├── api                // api目录是对外提供的接口
-│   ├── Auth.php       // 权限接口，供其它应用插件调用
-│   ├── Menu.php       // 菜单相关接口，供其它应用插件调用
-│   ├── Middleware.php // 鉴权中间件，供其它应用插件接入admin权限时使用
-│   └── Install.php    // 安装脚本，升级时使用
-├── config // 配置目录
-└── webman-admin.sql // 安装时用的sql文件
+│   ├── controller                      // 控制器目录
+│   │   ├── IndexController.php   // 主页
+│   │   ├── AccountController.php // 账户相关
+│   │   ├── AdminController.php   // 管理员管理
+│   │   ├── ConfigController.php  // 配置管理
+│   │   ├── DevController.php     // 开发辅助
+│   │   ├── DictController.php    // 字典管理
+│   │   ├── InstallController.php // 安装
+│   │   ├── PluginController.php  // 插件管理
+│   │   ├── RoleController.php    // 角色管理
+│   │   ├── RuleController.php    // 菜单权限管理
+│   │   ├── TableController.php   // 数据库管理
+│   │   ├── UploadController.php  // 上传管理
+│   │   ├── UserController.php    // 会员管理
+│   │   ├── Base.php              // 控制器基类
+│   │   └── Crud.php              // 增删改查基类
+│   ├── model          // Model
+│   ├── view           // 视图
+│   ├── exception      // 异常控制
+│   ├── middleware     // 中间件
+│   ├── functions.php  // 函数定义
+│   └── common               // 通用类目录
+│       ├── Layui.php  // Layui代码生成相关
+│       └── Util.php   // 工具类
+├── api    // 供其它项目调用的api目录
+│   ├── Auth.php       // 权限接口
+│   ├── Install.php    // 安装
+│   ├── Menu.php       // 菜单接口
+│   └── Middleware.php // 鉴权中间件接口
+├── config    // 配置目录
+├── public    // 静态文件目录
+│   ├── admin     // admin目录，放置与页面有关的css js
+│   ├── component // 组件目录
+│   ├── config    // admin前端配置目录
+│   ├── demos     // 一些页面demo
+│   ├── resource  // 资源目录
+│   └── upload    // 上传目录
+└── webman-admin.sql    // 数据库表结构
 ```
 

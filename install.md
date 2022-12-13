@@ -1,15 +1,16 @@
 # 安装
 
-* 执行命令 `composer require -W webman/admin`
+> **注意** 要求 php>=7.2 webman>=1.4
 
-* 重启webman `php start.php restart`
+1 执行命令 `composer require -W webman/admin`
 
+2 重启webman
 
-> **注意** `webman/admin` 要求 `webman>=1.4`
+3 访问 `http://127.0.0.1:8787/app/admin/` 完成数据库相关配置
 
+4 重启webman
 
-# 访问
-访问 `http://127.0.0.1:8787/app/admin` 会自动进入安装页面，设置数据库及管理员账户重启webman即可。
+5 再次进入 `http://127.0.0.1:8787/app/admin/`
 
 # 文件位置
 `webman/admin` 会被安装于`{主项目}/plugin/admin`目录下

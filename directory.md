@@ -3,7 +3,7 @@
 ```
 plugin/admin
 ├── app
-│   ├── controller                      // 控制器目录
+│   ├── controller     // 控制器目录
 │   │   ├── IndexController.php   // 主页
 │   │   ├── AccountController.php // 账户相关
 │   │   ├── AdminController.php   // 管理员管理

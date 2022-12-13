@@ -12,6 +12,20 @@
 
 不仅如此，权限还会细化到管理员的角色是否有访问某个控制器里某个action的权限(角色管理只给了某个菜单部分权限时)。
 
+## 页面内鉴权
+有时候我们需要控制页面的某部分例如某个按钮只展现给有权限的管理员查看，这时可以通过给相关页面dom节点增加 permission 属性，例如
+```
+<script type="text/html" id="table-toolbar">
+    <button class="pear-btn pear-btn-primary pear-btn-md" lay-event="add" permission="app.admin.admin.insert">
+        <i class="layui-icon layui-icon-add-1"></i>新增
+    </button>
+    <button class="pear-btn pear-btn-danger pear-btn-md" lay-event="batchRemove" permission="app.admin.admin.delete">
+        <i class="layui-icon layui-icon-delete"></i>删除
+    </button>
+</script>
+```
+permission的值实际上是变种的url路径(`/`用`.`代替)，例如新增按钮需要请求的url路径是`/app/admin/admin/insert`，则`permission="app.admin.admin.insert"`，如果当前管理员在菜单权限中没有`plugin\admin\app\controller\AdminController@insert`对应的记录，则无法看到插入按钮。
+
 ## 权限注释
 给控制器的方法添加注释，这样能让权限系统自动识别菜单绑定的控制器对应的权限名称，方便在"角色管理"里为角色识别并添加权限。
 

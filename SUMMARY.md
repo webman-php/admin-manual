@@ -7,10 +7,10 @@
 - 主要功能
 
   - [数据库管理](base/database.md)
-  - [菜单管理](base/menu.md)
-  - [一键菜单](base/create-menu.md)
-  - [插件市场](base/market.md)
   - [控件](base/control.md)
+  - [菜单管理](base/menu.md)
+  - [一键菜单](base/crud.md)
+  - [插件市场](base/market.md)
   
 - 开发
 

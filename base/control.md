@@ -76,6 +76,13 @@ url返回格式参考 `plugin/admin/app/controller/Crud.php` `formatSelect` 方�
 | multiple |是否允许多文件上传|int|0|
 
 ### 上传图片 uploadImage
+|参数|说明|类型|默认值|
+|----|----|-------|----|
+| url |上传接口|string|`/app/admin/upload/image`|
+| exts |允许上传的文件后缀 如`zip|rar|7z`|string||
+| field |设定文件域的字段名|string|__file__|
+| size |设置文件最大可允许上传的大小，单位 KB|int||
+| multiple |是否允许多文件上传|int|0|
 
 ### 图标 iconPicker
 

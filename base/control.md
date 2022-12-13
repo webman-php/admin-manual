@@ -50,6 +50,19 @@
 **如果是字典数据**
 则填写格式为 `url:/app/admin/dict/get/{字典名}`
 
+### 树形单选/树形多选 treeSelect/treeSelectMulti
+
+|参数|说明|类型|默认值|
+|----|----|------|----|
+|url|返回树形结构的接口地址，格式参考表格底部说明|string| |
+|value|初始值|string | |
+
+示例 `url:/app/admin/rule/select?format=tree`
+返回格式参考 `plugin/admin/app/controller/Crud.php` `formatTree` 方法
+
+**注意**
+由于pear-admin自带的[select下拉多选组件](https://hnzzmsf.github.io/example/example_v4.html)官方不再维护，`webman-admin`下拉选择与树形选择使用的是[xm-select组件](https://maplemei.gitee.io/xm-select/)，这两种组件都不是layui官方组件。
+
 
 ### 日期选择/日期时间选择 datePicker
 
@@ -112,13 +125,4 @@
 
 示例 `value:layui-icon-set`
 
-### 树形单选/树形多选 treeSelect/treeSelectMulti
 
-|参数|说明|类型|默认值|
-|----|----|------|----|
-|url|返回树形结构的接口地址，格式参考表格底部说明|string| |
-|value|初始值|string | |
-
-
-示例 `url:/app/admin/rule/select?format=tree`
-返回格式参考 `plugin/admin/app/controller/Crud.php` `formatTree` 方法

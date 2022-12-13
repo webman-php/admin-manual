@@ -4,13 +4,25 @@
 
 ## 原理
 
-每个菜单一般都绑定一个控制器类名(name字段指定)，例如"权限管理"下的"账户管理"菜单key字段为`plugin\admin\app\controller\AdminController`。
+`wa_rules` 表中存储着菜单和菜单下对应的权限(`控制器@动作`)，例如
+```
++----+--------------+----------------------------------------------------+
+| id | title        | key                                                |
++----+--------------+----------------------------------------------------+
+|  4 | 账户管理     | plugin\admin\app\controller\UserController        |
+| 74 | 插入         | plugin\admin\app\controller\UserController@insert |
+| 75 | 更新         | plugin\admin\app\controller\UserController@update |
+| 76 | 删除         | plugin\admin\app\controller\UserController@delete |
+| 77 | 查询         | plugin\admin\app\controller\UserController@select |
++----+--------------+----------------------------------------------------+
+```
 
-每个管理员都有一个或多个角色，每个角色都对应着一系列可访问菜单(或权限节点)。
+每个管理员都有一个或多个角色，每个角色在`wa_rules`表里都对应着一系列可访问`控制器@动作`的记录。
 
-当管理员访问某个url时，系统会判断这个管理员的角色里是否有此菜单的访问权限，从而达到权限控制目的。
+例如管理员访问url路径为`/app/admin/user/insert` 时，鉴权中间件会判断当前管理员的角色里是否有`plugin\admin\app\controller\UserController@insert` 的记录，有的话就有权限，否则没有权限。
 
-不仅如此，权限还会细化到管理员的角色是否有访问某个控制器里某个action的权限(角色管理只给了某个菜单部分权限时)。
+> **提示**
+> 鉴权中间件在`plugin/admin/app/middleware/AccessControl.php`
 
 ## 页面内鉴权
 有时候我们需要控制页面的某部分例如某个按钮只展现给有权限的管理员查看，这时可以通过给相关页面dom节点增加 permission 属性，例如
@@ -24,7 +36,7 @@
     </button>
 </div>
 ```
-permission的值实际上是变种的url路径(`/`用`.`代替)，例如新增按钮需要请求的url路径是`/app/admin/admin/insert`，则`permission="app.admin.admin.insert"`，如果当前管理员在菜单权限中没有`plugin\admin\app\controller\AdminController@insert`对应的记录，则无法看到插入按钮。
+permission的值实际上是变种的url路径(`/`用`.`代替)，例如新增按钮需要请求的url路径是`/app/admin/admin/insert`，则`permission="app.admin.admin.insert"`，如果当前管理员在`wa_rules`表里没有`plugin\admin\app\controller\AdminController@insert`对应的记录，则无法看到插入按钮。
 
 ## 权限注释
 给控制器的方法添加注释，这样能让权限系统自动识别菜单绑定的控制器对应的权限名称，方便在"角色管理"里为角色识别并添加权限。

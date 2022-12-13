@@ -16,7 +16,6 @@
 
   - [鉴权](development/auth.md)
   - [其它系统接入](development/link.md)
-  - [添加页面](development/page.md)
   - [相关文档](development/urls.md)
   
   

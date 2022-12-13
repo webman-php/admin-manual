@@ -1,18 +1,12 @@
 
-### webman/admin的前端源码
-https://github.com/webman-php/admin-vue-src  
+### Pear Admin Layui 文档
+http://www.pearadmin.com/doc/index.html
 
-### webman/admin的前端文档
-https://vvbin.cn/doc-next/guide/introduction.html  
+### Layui 文档
+https://layui.gitee.io/v2/docs/
 
-### webman/admin的前端组件文档
-https://vvbin.cn/doc-next/components/introduction.html  
+### Layui 示例
+https://layui.gitee.io/v2/demo/
 
-#### ant.design 组件文档
-https://www.antdv.com/components/overview-cn
-
-### vue3文档
-https://cn.vuejs.org/guide/introduction.html
-
-### webman/admin的后端源码
+### webman/admin 源码
 https://github.com/webman-php/admin 

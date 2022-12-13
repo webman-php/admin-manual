@@ -1,6 +1,6 @@
 # 其它系统接入
 
-如果你对 `Vue3.0` `Ant-Design-Vue` `TypeScript`不熟悉，或者已经有了自己的管理后台，想接入此系统，或是想以相对独立的方式接入此系统请参考本章节。
+如果已经有了自己的管理后台，想接入webman-admin，或是想以相对独立的方式接入此系统请参考本章节。
 
 ## 原理
 1. 通过统一的鉴权中间件来鉴权
@@ -25,8 +25,8 @@ return [
 
 ## 设置菜单
 由于鉴权是以菜单为入口，所以需要把控制器`app\admin\controller\User`与菜单绑定。
-进入"菜单管理"，将name字段填写为 `app\admin\controller\User`，url字段填写为`/admin/user/list` 如图
-![](../img/link.png)
+进入"菜单管理"，将标识字段填写为 `app\admin\controller\User`，url字段填写为`/admin/user/list` 如图
+![img_1.png](img_1.png)
 
 
 **至此，已经将`/admin/user/list`页面及权限接入到了`webman/admin`后台**

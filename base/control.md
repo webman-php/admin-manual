@@ -44,8 +44,11 @@
 则填写格式类似为 `data:0:正常,1:禁用,2:审核`
 
 **如果下拉选择是动态的**
-则填写格式为url `url:/app/admin/admin/select?format=select`
-url返回格式参考 `plugin/admin/app/controller/Crud.php` `formatSelect` 方法
+则填写格式为 `url:/app/admin/admin/select?format=select`
+返回格式参考 `plugin/admin/app/controller/Crud.php` `formatSelect` 方法
+
+**如果是字典数据**
+则填写格式为 `url:/app/admin/dict/get/{字典名}`
 
 
 ### 日期选择/日期时间选择 datePicker

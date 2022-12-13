@@ -1,5 +1,5 @@
 # webman/admin
-`webman/admin` 是基于webman开发的一个开源免费管理后台，任何webman项目(*要求webman>=1.4*)都可以安装使用它。`webman/admin`将成为webman非常重要的生态。
+`webman/admin` 是基于webman开发的一个开源免费管理后台，任何webman项目(要求webman>=1.4)都可以安装使用它。`webman/admin`将成为webman非常重要的生态。
 
 **源码地址** https://github.com/webman-php/admin (欢迎点星星收藏)
 

@@ -3,10 +3,12 @@
 
 **源码地址** https://github.com/webman-php/admin (欢迎点星星收藏)
 
-# 前端技术栈
-前端使用[pear-admin-layui](http://www.pearadmin.com)，开发者需要熟悉[Layui](https://layui.gitee.io)组件库
+# 相关文档
+前端使用[pear-admin-layui](http://www.pearadmin.com)，开发者需要熟悉Layui组件库
 
 [Layui官方手册](https://layui.gitee.io/v2/docs/) [Layui官方示例](https://layui.gitee.io/v2/demo/)
+
+webman/admin实际上是一个webman应用插件，相关文档参见 [应用插件](https://www.workerman.net/doc/webman/plugin/app.html)
 
 # webman/admin 目标
 ### 为应用插件提供统一的后台

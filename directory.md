@@ -1,5 +1,7 @@
 # 目录结构
 
+webman/admin实际上是一个[应用插件](https://www.workerman.net/doc/webman/plugin/app.html)，源码在 `{主项目}/plugin/admin` 下。目录结构如下：
+
 ```
 plugin/admin
 ├── app

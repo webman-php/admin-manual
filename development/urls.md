@@ -1,7 +1,3 @@
-
-### Pear Admin Layui 文档
-http://www.pearadmin.com/doc/index.html
-
 ### Layui 文档
 https://layui.gitee.io/v2/docs/
 

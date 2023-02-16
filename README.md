@@ -4,7 +4,7 @@
 **源码地址** https://github.com/webman-php/admin (欢迎点星星收藏)
 
 # 相关文档
-前端使用[pear-admin-layui](http://www.pearadmin.com)，开发者需要熟悉Layui组件库
+前端使用开发者需要熟悉Layui组件库
 
 [Layui官方手册](https://layui.gitee.io/v2/docs/) [Layui官方示例](https://layui.gitee.io/v2/demo/)
 

@@ -9,7 +9,7 @@
 +----+--------------+----------------------------------------------------+
 | id | title        | key                                                |
 +----+--------------+----------------------------------------------------+
-|  4 | 账户管理     | plugin\admin\app\controller\UserController        |
+|  4 | 账户管理      | plugin\admin\app\controller\UserController        |
 | 74 | 插入         | plugin\admin\app\controller\UserController@insert |
 | 75 | 更新         | plugin\admin\app\controller\UserController@update |
 | 76 | 删除         | plugin\admin\app\controller\UserController@delete |
@@ -124,6 +124,34 @@ class AccountController extends Base
     public $noNeedAuth = ['info'];
 }
 ```
+
+## 数据限制
+有些表的数据很敏感，不能给所有管理员查看，这时候我们可以使用数据限制功能，只展示当前管理员可查看的数据。数据限制通过控制器的`$dataLimit`和`$dataLimitField`两个属性来控制，例如
+```php
+class FooController extends Crud
+{
+    /**
+     * 开启auth数据限制
+     * @var string
+     */
+    protected $dataLimit = 'auth';
+
+    /**
+     * 以admin_id为数据限制字段
+     * @var string
+     */
+    protected $dataLimitField = 'admin_id';
+
+}
+```
+**$dataLimit** 标识数据限制类型，可选值为有
+- null 不做限制，任何管理员都可以查看该表的所有数据
+- auth 管理员能看到自己以及自己的子管理员插入的数据
+- personal 管理员只能看到自己插入的数据
+
+**$dataLimitField** 表中存储admin_id字段的名字，绝大部分情况下是admin_id
+
+数据限制的逻辑在 `plugin/admin/app/controller/Crud.php` 中的 `selectInput` 方法中。
 
 ## 外部系统接入鉴权
 

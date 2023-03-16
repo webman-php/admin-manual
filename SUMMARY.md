@@ -19,6 +19,10 @@
   - [其它系统接入](development/link.md)
   - [相关文档](development/urls.md)
   
+- 应用插件开发
+
+  - [菜单](app-development/menu.md)
+  
   
   
  

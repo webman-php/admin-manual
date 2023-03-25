@@ -1,4 +1,4 @@
-# 菜单导入
+# 菜单
 在安装插件时，webman-admin会自动导入`plugin/插件/config/menu.php`配置里的菜单，卸载插件时也会根据此配置删除菜单。
 
 menu.php 内容类似如下
@@ -66,3 +66,18 @@ url路径，一般填写控制器对应的url路径
 
 #### weight
 权重，用来排序，值大的在前，值小的在后
+
+## 测试安装
+如果你的应用插件是使用 `php webman app-plugin:create` 命令生成的，则会生成一个`plugin/插件名/api/Install.php`类，类里面install方法用于安装菜单，uninstall方法用于卸载菜单。我们可以通过以下命令来测试install以及uninstall方法。
+
+**安装菜单**
+`php webman app-plugin:install 插件名`
+
+**卸载菜单**
+`php webman app-plugin:uninstall 插件名`
+
+> **提示**
+> 如果你的应用插件需要在安装或者卸载时触发某个操作，可以写在`Install`类里的`install`或`uninstall`方法中
+
+
+

@@ -21,7 +21,7 @@
   
 - 应用插件开发
 
-  - [菜单](app-development/menu.md)
+  - [导入菜单](app-development/menu.md)
   
   
   

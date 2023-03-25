@@ -1,4 +1,4 @@
-# 菜单
+# 导入菜单
 在安装插件时，webman-admin会自动导入`plugin/插件/config/menu.php`配置里的菜单，卸载插件时也会根据此配置删除菜单。
 
 menu.php 内容类似如下

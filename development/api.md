@@ -91,7 +91,7 @@ class Menu
 ```
 
 > **提示**
-> 一般来说应用插件无需手动调用Menu菜单接口，开发者只需要准备好[menu.php菜单配置](../app-development/menu.md)，安装插件时会自动倒入菜单。
+> 一般来说应用插件无需手动调用Menu菜单接口，开发者只需要准备好[menu.php菜单配置](../app-development/menu.md)，通过webman-admin安装插件时会自动导入菜单。
 
 ## Middleware 中间件
 为了让其它系统能够[接入webman-admin的权限体系](link.md)，webman-admin提供了一个鉴权中间件，实现如下

@@ -28,8 +28,7 @@ return [
 进入"菜单管理"，将标识字段填写为 `app\admin\controller\User`，url字段填写为`/admin/user/list` 如图
 ![img_1.png](img_1.png)
 
-> **提示**
-> 如果你是应用插件开发者，只需要准备好[menu.php菜单配置](../app-development/menu.md)，通过webman-admin安装插件时会自动导入菜单。
-
-
 **至此，已经将`/admin/user/list`页面及权限接入到了`webman/admin`后台**
+
+## 菜单自动导入
+如果你是应用插件开发者，只需要准备好menu.php，通过webman-admin安装插件时会自动导入菜单，参考[应用插件menu.php菜单配置](../app-development/menu.md)。

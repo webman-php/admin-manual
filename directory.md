@@ -46,4 +46,4 @@ plugin/admin
 ```
 
 # URl访问
-根据[应用插件URL规则](https://www.workerman.net/doc/webman/plugin/app.html#url%E8%AE%BF%E9%97%AE)，webman/admin的URL访问以`/app/admin/`未前缀。
+根据[应用插件URL规则](https://www.workerman.net/doc/webman/plugin/app.html#url%E8%AE%BF%E9%97%AE)，webman/admin的URL访问以`/app/admin/`为前缀。

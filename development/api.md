@@ -1,6 +1,6 @@
 # 通用接口
 
-webman-admin在`plugin/admin/api`目录提供了一些通用接口供第三方调用。
+webman-admin在`plugin/admin/api`目录提供了一些通用接口供内部调用(非网络接口)。
 
 ## Auth 权限接口
 ```php

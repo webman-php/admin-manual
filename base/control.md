@@ -101,7 +101,7 @@
 | exts |允许上传的文件后缀 如`zip|rar|7z`|string| |
 | field |设定文件域的字段名|string|__file__|
 | size |设置文件最大可允许上传的大小，单位 KB|int| |
-| multiple |是否允许多文件上传|int|0|
+| multiple(暂时不支持) |是否允许多文件上传|int|0|
 |value|初始值|string | |
 
 示例 `url:/app/admin/upload/file;exts:zip`

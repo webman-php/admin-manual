@@ -162,18 +162,4 @@ function admin_id(): ?int
  */
 function admin($fields = null)
 {}
-
-/**
- * 当前是否是超级管理员
- * @return bool
- */
-function is_supper_admin(): bool
-{}
-
-/**
- * 获取当前管理员权限
- * @return array
- */
-function admin_rules(): array
-{}
 ```

@@ -6,7 +6,7 @@
 # 相关文档
 前端使用开发者需要熟悉Layui组件库
 
-[Layui官方手册](https://layui.gitee.io/v2/docs/) [Layui官方示例](https://layui.gitee.io/v2/demo/)
+[Layui官方手册](https://layui.dev/2.7/)
 
 webman/admin实际上是一个webman应用插件，相关文档参见 [应用插件](https://www.workerman.net/doc/webman/plugin/app.html)
 

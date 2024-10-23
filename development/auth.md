@@ -36,7 +36,7 @@
     </button>
 </div>
 ```
-permission的值实际上是变种的url路径(`/`用`.`代替)，例如新增按钮需要请求的url路径是`/app/admin/admin/insert`，则`permission="app.admin.admin.insert"`，如果当前管理员在`wa_rules`表里没有`plugin\admin\app\controller\AdminController@insert`对应的记录，则无法看到插入按钮。
+permission的值实际上是变种的url路径(`/`用`.`代替，字母全部小写)，例如新增按钮需要请求的url路径是`/app/admin/admin/insert`，则`permission="app.admin.admin.insert"`，如果当前管理员在`wa_rules`表里没有`plugin\admin\app\controller\AdminController@insert`对应的记录，则无法看到插入按钮。
 
 ## 权限注释
 给控制器的方法添加注释，这样能让权限系统自动识别菜单绑定的控制器对应的权限名称，方便在"角色管理"里为角色识别并添加权限。

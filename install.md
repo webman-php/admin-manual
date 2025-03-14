@@ -5,9 +5,9 @@
 
 1. 安装
 
-  如果是webman是1.x版本执行  `composer require -W webman/admin ^1.0`
+  如果是webman是1.x版本执行  `composer require -W webman/admin ~1.0`
 
-  如果是webman是2.x版本执行 `composer require -W webman/admin ^2.0`
+  如果是webman是2.x版本执行 `composer require -W webman/admin ~2.0`
 
 2. 重启webman
 
